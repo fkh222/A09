@@ -37,11 +37,13 @@ li a {
 	color: white;
 	font-weight:bold;
 }
-.current{
+#nav_menu a.current{
 	color:yellow;
 }
 #nav_menu ::after pseudo-element {
-	
+	content:"";
+	clear:both;
+	display:block;
 }
 /** submenu */
 #submenu{
