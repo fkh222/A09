@@ -40,21 +40,23 @@ li a {
 #nav_menu a.current{
 	color:yellow;
 }
-#nav_menu ::after pseudo-element {
-	content:"";
-	clear:both;
-	display:block;
-}
+
 /** submenu */
-#submenu{
-	display:none;
-	position: absolute;
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
 }
-#submenu ul li{
-	float:none;
+#nav_menu ul ul li {
+	float: none;
 }
-#submenu a:hover{
-	display:block;
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 /* the styles for the header */
 header {
