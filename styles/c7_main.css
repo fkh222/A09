@@ -17,10 +17,12 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+/** nav menu */
 #nav_menu ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	position:relative;
 }
 #nav_menu ul li{
 	float:left;
@@ -37,6 +39,20 @@ li a {
 }
 .current{
 	color:yellow;
+}
+#nav_menu ::after pseudo-element {
+	
+}
+/** submenu */
+#submenu{
+	display:none;
+	position: absolute;
+}
+#submenu ul li{
+	float:none;
+}
+#submenu a:hover{
+	display:block;
 }
 /* the styles for the header */
 header {
