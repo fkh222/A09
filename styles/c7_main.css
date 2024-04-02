@@ -17,6 +17,27 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+#nav_menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li{
+	float:left;
+}
+li a {
+	display:block;
+	width: 160px;
+	text-align: center;
+	padding:1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight:bold;
+}
+.current{
+	color:yellow;
+}
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
